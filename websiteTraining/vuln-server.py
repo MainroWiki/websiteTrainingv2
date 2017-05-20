@@ -5,6 +5,8 @@ import cgi , MySQLdb
         Madame Mishu  propose des cours de hacking,
         ....  Mme Mishu vous met au defi
         de lancer un webshell sur son serveur 
+        
+        Indice : penser a une injection sql qui vous permettra d'uploader un webshell
 
 """
 
