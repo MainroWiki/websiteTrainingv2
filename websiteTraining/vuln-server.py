@@ -11,7 +11,7 @@ import cgi , MySQLdb
 
 
 ROOT = "/Users/Amine/"
-PORT = 4444
+PORT = 80
 IP   ='0.0.0.0'
 
 class Handler(BaseHTTPRequestHandler):
