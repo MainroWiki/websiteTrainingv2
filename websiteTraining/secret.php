@@ -25,7 +25,7 @@
           <li><a href="categorie.php">Catégories</a></li>
           <li><a href="upload.php">Upload</a></li>
           <li><a href="contacts.php">Contact</a></li>
-	        <li><a href="connexion.php">Connexion</a></li>
+	  <li><a href="connexion.php">Connexion</a></li>
         </ul>
       </div>
     </div>
@@ -57,49 +57,12 @@
         </div>
       </div>
       <div id="content">
+        <!-- insert the page content here -->
+        <h1>Espace Administrateur </h1>
 
-      <h1>Espace Administrateur</h1>
 
-      <?php
-      //Connexion db
-      include("includes/connexion_db.inc2.php");
+		<p> Bravo !  ISILAB{AuThenTICAtion_BasiC_gET_PoST}</p>
 
-      function valid($a){
-        return isset($a) && is_string($a) && $a !='';
-      }
-
-      if( valid($_GET['password'])){
-        $p = $_GET['password'];
-        if ($auth = $mysqli->query("SELECT * from users where id=1 and password='".$p."'")){
-          if ($auth->num_rows==1){
-            $flag = $mysqli->query("SELECT flag from flagsqliauth where id=1")->fetch_assoc();
-            echo '<p>Bien joué, voici le flag: '.$flag['flag'].'<br />';
-            echo 'Il reste une injection SQL dans cette section mais elle est plus difficile.<br />';
-            echo 'Tu as réussi à passer outre ce mot de passe, mantenant il faut le trouver.</p><br /><br />';
-            echo 'Indice: Voici la requête</br>';
-            echo '<code>SELECT * from users where id=1 and password=\'.$pass.\'</code>';
-          } else {
-            echo 'Mauvais mot de passe.';
-          }
-
-        } else {
-          echo 'Une erreur est survenue lors de la requête mysql.';
-        }
-      } else {
-      ?>
-
-        <p> Veuillez vous authentifier </p>
-        <form action="">
-
-         <div class="container">
-           <label><b>Mot de passe</b></label>
-           <input type="password" name="password" required>
-
-           <button type="submit">Login</button>
-         </div>
-
-       </form>
-      <?php } ?>
 
 		</div>
     </div>
