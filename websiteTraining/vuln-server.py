@@ -3,7 +3,7 @@ import cgi , MySQLdb
 
 """
         Madame Mishu  propose des cours en hacking,
-        ....  Mme Mishu vous mets au defit
+        ....  Mme Mishu vous mets au defi
         de lancer un webshell sur son serveur 
 
 """
