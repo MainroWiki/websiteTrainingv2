@@ -1,8 +1,5 @@
 <?php
 
-  /*
-       Goal : Get your web shell on the server. 
-  */
 
         if(isset($_COOKIE["shell"])) {
                 
